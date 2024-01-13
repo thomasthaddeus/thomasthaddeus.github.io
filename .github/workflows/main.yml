@@ -1,0 +1,23 @@
+name: Update Landing Page
+
+on:
+  push:
+    branches: [ main ] # or any other branch
+  schedule:
+    - cron: '0 1 * * 1' # Runs every day at midnight
+  workflow_dispatch:
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Update Landing Page
+      uses: thomasthaddeus/UpdateRepositoryList@v1.0.0
+      env:
+        MY_GITHUB_USERNAME: ${{ secrets.MY_GITHUB_USERNAME }}
+        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        HTML_FILE_PATH: 'index.html'   # Set the path to the HTML file
