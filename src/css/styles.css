@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ff6347; /* Tomato color for all heading tags */
+    margin-bottom: 20px; /* Consistent bottom margin for headings */
+}
+
+p {
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.content {
+    margin-top: 30px;
+    background-color: white; /* White background for content area */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for content area */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ddd; /* Light grey border */
+}
+
+input[type="submit"], a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Hand cursor on hover */
+}
+
+input[type="submit"]:hover, a.button:hover {
+    background-color: #ff7f50;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #666; /* Slightly lighter text for the footer */
+}
+
+/* Responsive design: adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .content, input[type="text"], input[type="email"], input[type="password"], textarea {
+        width: 90%; /* Slightly narrower on small screens for padding */
+        margin: 10px auto; /* Center align */
+    }
+}
+
+/* Additional responsive or element-specific styles can be added here */
