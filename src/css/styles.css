@@ -15,6 +15,16 @@ p {
     line-height: 1.6; /* Improved line spacing for readability */
 }
 
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack the links vertically on small screens */
+  }
+
+  nav li {
+    margin: 5px 0; /* Adjust margin for vertical layout */
+  }
+}
+
 .content {
     margin-top: 30px;
     background-color: white; /* White background for content area */
@@ -61,4 +71,29 @@ footer {
     }
 }
 
-/* Additional responsive or element-specific styles can be added here */
+/* Remove default list styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* This displays the list items in a row */
+  justify-content: center; /* This centers the list items horizontally */
+  align-items: center; /* This aligns the list items vertically */
+}
+
+/* Style for each list item */
+nav li {
+  margin: 0 10px; /* Adjust the spacing between each link */
+}
+
+/* Style for links */
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: #000; /* Set your desired color */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Add a hover effect for links */
+nav a:hover {
+  color: #007bff; /* Change color on hover */
+}
