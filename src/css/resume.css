@@ -1,0 +1,197 @@
+body {
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  justify-content: center;
+}
+
+a,
+.user-info p a {
+  color: #fff;
+  /* Default link color, overridden for .user-info p a */
+  text-decoration: none;
+}
+
+a:hover,
+.user-info p a:hover {
+  text-decoration: underline;
+}
+
+ul,
+li,
+.skills-list,
+.pypi-contributions,
+.skills-list li,
+.pypi-contributions li {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+p,
+.summary-content p,
+.user-info p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.profile-summary,
+.container,
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.job-duration {
+  padding-left: 10px;
+  margin-top: -15px;
+  line-height: 1.4;
+  color: #6f6f6f;
+  font-size: smaller;
+}
+
+.profile-summary {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 0 20px 0 20px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sidebar {
+  flex-basis: 300px;
+  background-color: #24486d;
+  color: #ffffff;
+  padding: 20px;
+  flex: 1;
+  max-width: 200px;
+}
+
+.sidebar a {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+.sidebar a:hover {
+  color: #FFA500;
+  text-decoration: none;
+}
+
+.sidebar h3 {
+  margin: 20px 0 -10px 0;
+}
+
+.top-level li>ul {
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+.lower-level ul>ul>li {
+  list-style-type: circle;
+}
+
+.main-content {
+  flex-grow: 1;
+  flex: 3;
+  padding: 20px;
+  max-width: calc(100% - 220px);
+}
+
+.main-content ul {
+  margin-left: 1em;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+}
+
+/* Reset list styles for the skills list */
+.skills-table ul {
+  list-style-type: disc;
+  /* Show bullet points */
+  margin-bottom: 10px;
+  /* Space between items */
+}
+
+/* Further indent for nested lists, if any */
+.skills-table ul ul {
+  list-style-type: circle;
+  /* Different bullet style for nested items */
+  color: #222;
+}
+
+/* Style for top-level list items in the education section */
+.education-entry ul {
+  list-style-type: disc;
+  /* or any style you prefer */
+  padding-left: 10px;
+  /* Adjust as needed for indentation */
+}
+
+/* Style for nested list items within the education section */
+.education-entry ul ul {
+  list-style-type: circle;
+  /* or any style you prefer for nested lists */
+  padding-left: 20px;
+  /* Increase indentation for nested lists */
+
+}
+
+/* Target all list items */
+ul li {
+  margin-bottom: 5px;
+  /* Shrinks the distance between line items */
+  margin-left: 20px;
+}
+
+/* Target the first list item */
+ul li:first-child {
+  margin-top: 10px;
+}
+
+/* Target the last list item */
+ul li:last-child {
+  margin-bottom: 10px;
+}
+
+.padded-paragraph {
+  color: #4f4f4f;
+  font-size: smaller;
+  text-align: center;
+}
+
+.pipe-spacing {
+  margin: 0 10px; /* Adjust the 10px as needed to increase or decrease spacing */
+}
