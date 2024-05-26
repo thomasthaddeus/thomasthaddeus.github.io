@@ -1,7 +1,9 @@
 ---
-title: Python CLI on Windows
-author: Thaddeus Thomas
+layout: post
+title: "Python CLI on Windows"
+author: "Thaddeus Thomas"
 date: 2024-05-26
+categories: python cli
 ---
 
 ## Overview
