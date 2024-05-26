@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Update Landing Page
-      uses: thomasthaddeus/UpdateRepositoryList@v1.0.0
+      uses: thomasthaddeus/UpdateRepositoryList@v1
       env:
         MY_GITHUB_USERNAME: ${{ secrets.MY_GITHUB_USERNAME }}
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
